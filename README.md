@@ -11,4 +11,4 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 ### Links
 
 - [Frontend Mentor](https://www.frontendmentor.io/profile/rowanrooster)
-- [Live Preview](https://rowanrooster.github.io/loopstudios-landing-page-main/)
+- [Live Preview](https://rowanrooster.github.io/fylo-landing-page/)
