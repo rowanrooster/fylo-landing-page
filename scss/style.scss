@@ -455,7 +455,29 @@ main.wrapper {
                 }
             }
         } 
-    }  
+    } 
+
+    #signup {
+    
+        .signup-box {
+    
+            .signup-form #fylo-form {  
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-between; 
+
+                #email-inp[type=email]  {
+                    width: 60%;
+                }
+                
+                #email-btn {
+                    width: 35%;
+                    height: 0%;
+                }
+            }
+        }
+    }
+    
     .footer-wrapper {    
         .footer-box {   
             .footer-head img {

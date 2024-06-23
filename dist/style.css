@@ -515,6 +515,18 @@ main.wrapper #testimonials .testimonials-box .quote::after {
   main.wrapper #features .features-box .feature h4 {
     margin-bottom: 15px;
   }
+  #signup .signup-box .signup-form #fylo-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #signup .signup-box .signup-form #fylo-form #email-inp[type=email] {
+    width: 60%;
+  }
+  #signup .signup-box .signup-form #fylo-form #email-btn {
+    width: 35%;
+    height: 0%;
+  }
   .footer-wrapper .footer-box .footer-head img {
     max-width: 6.875rem;
   }
