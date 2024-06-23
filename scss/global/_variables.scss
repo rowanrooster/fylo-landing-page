@@ -1,3 +1,32 @@
 :root {
+    // Colors
+    --c-dblue-1: hsl(218, 28%, 13%); // main background
+    --c-dblue-2: hsl(217, 28%, 15%); // intro and email sign up background
+    --c-dblue-3: hsl(219, 30%, 18%); // testimonials background
+    --c-dblue-4: hsl(216, 53%, 9%); // footer background
+
+    --c-btn-start: hsl(176, 68%, 64%); // call-to-action gradient
+    --c-btn-end: hsl(198, 60%, 50%); // call-to-action gradient
+    
+    --c-lred: hsl(0, 100%, 63%); // error
+
+    --c-white: hsl(0, 0%, 100%);
+    --c-white-tr: hsla(0, 0%, 100%, 0.95);
+    --c-black: hsl(0, 0%, 0%);
+
+    // Fonts
+    --f-p: 0.875rem;
+    --f-h1: 2.5rem;
+    --f-h2: 2.5rem;
+    --f-h3: 2rem;
+    --f-h4: 1.25rem;
+    --f-raleway: 'Raleway', Helvetica, sans-serif;
+    --f-opensans: 'Open Sans', Arial, sans-serif;
+    --f-reg: 400;
+    --f-bold: 700;
+
+    // Utilities
+    --tr-quicker: all .1s ease-in-out;
+    --tr-quick: all .3s ease-in-out;
 
 }

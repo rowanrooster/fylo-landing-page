@@ -4,12 +4,19 @@
 
 body {
     margin: 0;
-    font-size: 1rem;
+    font-size: var(--f-p);
+    font-family: var(--f-opensans);
+    font-weight: var(--f-reg);
     line-height: 1.5;
-    font-weight: 400;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
+    margin: 0;
+    font-family: var(--f-raleway);
+    font-weight: var(--f-bold);
+}
+
+p {
     margin: 0;
 }
 

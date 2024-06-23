@@ -2,17 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+  
+  <!-- Raleway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Open Sans-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
 
-  <header class="fylo-navbar">
-    <div>
-      <img src="assets/images/logo.svg" alt="logo">
-      <nav id="fylo-nav">
+  <header id="fylo-navbar" class="fylo-navbar">
+    <div class="nav-wrapper">
+      <img class="logo" src="assets/images/logo.svg" alt="logo">
+      <nav id="fylo-nav" class="fylo-nav">
         <ul class="nav-menu">
           <li><a href="">Features</a></li>
           <li><a href="">Team</a></li>
@@ -32,28 +43,30 @@
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>Fylo stores all your most important files in one secure location. Access them wherever 
           you need, share and collaborate with friends family, and co-workers.</p>
-        <a href="">Get Started</a>
+        <a class="cta-btn" href="">Get Started</a>
       </div>
-      <div class="intro-features">
-        <div>
+    </section>
+    <section id="features">
+      <div class="features-box">
+        <div class="feature">
           <img src="assets/images/icon-access-anywhere.svg" alt="access anywhere">
           <h4>Access your files, anywhere</h4>
           <p>The ability to use a smartphone, tablet, or computer to access your account means your 
             files follow you everywhere.</p>
         </div>
-        <div>
+        <div class="feature">
           <img src="assets/images/icon-security.svg" alt="security">
           <h4>Security you can trust</h4>
           <p>2-factor authentication and user-controlled encryption are just a couple of the security 
             features we allow to help secure your files.</p>
         </div>
-        <div>
+        <div class="feature">
           <img src="assets/images/icon-collaboration.svg" alt="collaboration">
           <h4>Real-time collaboration</h4>
           <p>Securely share files and folders with friends, family and colleagues for live collaboration. 
             No email attachments required.</p>
         </div>
-        <div>
+        <div class="feature">
           <img src="assets/images/icon-any-file.svg" alt="any file">
           <h4>Store any type of file</h4>
           <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
@@ -62,7 +75,7 @@
       </div>
     </section>
     <section id="about">
-      <div class="about-container">
+      <div class="about-box">
         <div class="about-img">
           <img src="assets/images/illustration-stay-productive.png" alt="stay productive">
         </div>
@@ -72,13 +85,13 @@
             storage needs.</p>
           <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
             attachments required.</p>
-          <a href="">See how Fylo works</a>
+          <a href="">See how Fylo works <img src="assets/images/icon-arrow.svg" alt=""></a>
         </div>
       </div>
     </section>
     <section id="testimonials">
-      <div class="testimonials-container">
-        <div class="testimonial">
+      <div class="testimonials-box">
+        <div class="testimonial quote">
           <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
             become a well-oiled collaboration machine.</p>
           <img src="assets/images/profile-1.jpg" alt="Satish Patel">
@@ -102,14 +115,15 @@
       </div>
     </section>
     <section id="signup">
-      <div class="signup-container">
+      <div class="signup-box">
         <div class="signup-form">
           <h3>Get early access today</h3>
           <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
             questions, our support team would be happy to help you.</p>
-            <form id="fylo-form" action="">
-              <input type="text">
-              <button type="submit">Get Started For Free</button>
+            <form id="fylo-form" name="fylo-form" action="">
+              <input id="email-inp" type="email" name="email" placeholder="email" required>
+              <button id="email-btn" class="cta-btn" type="submit" name="sugmit">Get Started For Free</button>
+              <div class="form-error"><p>Please enter a valid email address</p></div>
             </form>
         </div>
       </div>
@@ -117,7 +131,7 @@
   </main>
 
   <footer class="footer-wrapper">
-    <section id="contact" class="footer-container">
+    <section id="contact" class="footer-box">
       <div class="footer-head">
         <img src="assets/images/logo.svg" alt="logo">
       </div>
@@ -133,21 +147,21 @@
         </div>
         <div class="links">
           <ul>
-            <li>About Us</li>
-            <li>Jobs</li>
-            <li>Press</li>
-            <li>Blog</li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Blog</a></li>
           </ul>
           <ul>
-            <li>Contact Us</li>
-            <li>Terms</li>
-            <li>Privacy</li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy</a></li>
           </ul>
         </div>
         <div class="social">
-          <a href=""><img src="assets/images/icon-facebook.svg" alt="facebook">Facebook</a>
-          <a href=""><img src="assets/images/icon-twitter.svg" alt="twitter">Twitter</a>
-          <a href=""><img src="assets/images/icon-instagram.svg" alt="instagram">Instagram</a>
+          <a href=""><img src="assets/images/icon-facebook.svg" alt="facebook"></a>
+          <a href=""><img src="assets/images/icon-twitter.svg" alt="twitter"></a>
+          <a href=""><img src="assets/images/icon-instagram.svg" alt="instagram"></a>
         </div>
       </div>
     </section>
